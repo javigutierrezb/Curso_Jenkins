@@ -6,6 +6,7 @@ pipeline{
                 script{
                     def dia = new Date().getDay()
                     def map = [1:"Lunes", 2:"Martes", 3:"Miércoles", 4:"Jueves", 5:"Viernes",]
+                    println "Hoy es " + map[dia]
                     if(dia == 1){
                         echo ""
                     }
